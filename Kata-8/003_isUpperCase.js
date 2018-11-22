@@ -20,17 +20,18 @@ console.log('C'.isUpperCase());
 
 
 /*
-note:
+note -->
     注意：此处需要调用实例上的方法，也就是需要this,this在箭头函数中没有意义
 */
 /*
-solutions: 1) 2)
-    
+solutions -->
+1)
     String.prototype.isUpperCase = function () {
         return this == this.toUpperCase()
     };
     
     
+2)
     String.prototype.isUpperCase = function() {
         return this.toUpperCase() === this.toString();
     }
